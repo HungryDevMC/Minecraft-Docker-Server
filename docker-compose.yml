@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "true"
+      TYPE: PAPER
+      VERSION: 1.16.5
+      CONSOLE: "false"
+      MOTD: "Minecraft docker server"
+      ENABLE_COMMAND_BLOCK: "true"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "false"
+      MAX_PLAYERS: 30
+      OPS: HungryDev
+      USE_AIKAR_FLAGS: "true"
+    ports:
+      - 25565:25565
+    volumes:
+      - ./data:/data
+
