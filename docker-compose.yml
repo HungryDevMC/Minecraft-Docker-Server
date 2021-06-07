@@ -14,6 +14,8 @@ services:
       MAX_PLAYERS: 30
       OPS: HungryDev
       USE_AIKAR_FLAGS: "true"
+      EXEC_DIRECTLY: "true"
+      MEMORY: "4G"
     ports:
       - 25565:25565
     volumes:
