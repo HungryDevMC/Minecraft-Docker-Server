@@ -16,8 +16,8 @@ services:
       USE_AIKAR_FLAGS: "true"
       EXEC_DIRECTLY: "true"
       MEMORY: "4G"
+      WORLD: "https://filebin.net/bfmoq6u7nzep3db9/1_17.zip"
     ports:
       - 25565:25565
     volumes:
       - ./data:/data
-
